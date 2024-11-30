@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+<img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+                <h2>Do-it</h2>
+                <p>K A PRANAV</p>
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="menu-item active">Dashboard</a>
+                <a href="scheduled.html" class="menu-item">Scheduled</a>
+                <a href="settings.html" class="menu-item">Settings</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Dashboard</h1>
+            <div class="task-section">
+                <div class="filter-section">
+                    <button id="filter-all" class="filter-btn active">All</button>
+                    <button id="filter-pending" class="filter-btn">Pending</button>
+                    <button id="filter-completed" class="filter-btn">Completed</button>
+                </div>
+                <input type="text" id="task-input" placeholder="Enter a task..." />
+                <button id="add-task-btn">Add Task</button>
+                <ul id="task-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
